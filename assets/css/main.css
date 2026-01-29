@@ -1534,4 +1534,115 @@ section,
   font-size: 13px;
   color: rgba(255,255,255,0.45);
 }
+/* ================================
+   Contact Modern (matches existing style)
+================================ */
+.contact-modern{
+  background: white; /* same family as about-modern */
+}
+
+.contact-modern .contact-image-wrap{
+  padding: 40px; /* your default is 90px 40px; tighter for portrait */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.contact-modern .contact-photo{
+  object-fit: cover;           /* portrait-friendly */
+  border-radius: 24px;         /* softer than 3px, matches your rounded language */
+}
+
+.contact-modern .contact-panel{
+  background: #fff;
+  border-radius: 32px;
+  padding: 34px 32px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.06);
+}
+
+.contact-modern .contact-link{
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-modern .contact-link:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 991px){
+  .contact-modern .contact-image-wrap{ padding: 28px; }
+  .contact-modern .contact-panel{ padding: 28px 22px; }
+}
+/* Deliverables carousel styling (matches your modern rounded cards) */
+.deliverables-carousel {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.deliverables-carousel .carousel-inner img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.deliverables-carousel .carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 18px 16px;
+  text-align: left;
+  background: black;
+}
+
+.deliverables-carousel .carousel-caption h5 {
+  font-weight: 800;
+  color: white;
+  margin: 0 0 6px;
+}
+
+.deliverables-carousel .carousel-caption p {
+  margin: 0;
+  opacity: 0.92;
+}
+
+.deliverables-carousel .carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+@media (max-width: 991px){
+  .deliverables-carousel .carousel-inner img { height: 320px; }
+}
+
+/* Dark gray carousel controls */
+/*.deliverables-carousel .carousel-control-prev-icon,
+.deliverables-carousel .carousel-control-next-icon {
+  filter: invert(0.65);
+}*/
+
+/* Optional: darker background circle for better contrast */
+.deliverables-carousel .carousel-control-prev,
+.deliverables-carousel .carousel-control-next {
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(40, 40, 40, 0.6);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.deliverables-carousel .carousel-control-prev {
+  left: 14px;
+}
+
+.deliverables-carousel .carousel-control-next {
+  right: 14px;
+}
+
+.deliverables-carousel .carousel-control-prev:hover,
+.deliverables-carousel .carousel-control-next:hover {
+  background: rgba(30, 30, 30, 0.8);
+}
 
